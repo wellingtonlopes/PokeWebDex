@@ -16,7 +16,7 @@ class App extends Component {
   
   componentDidMount() {
     const interval = {
-      limit: 150,
+      limit: 250,
       offset: 1
     }
     const Pokedex = require('pokedex-promise-v2');
@@ -58,8 +58,8 @@ class App extends Component {
                             </ErrorBoundary>
                         </Scroll>
                     </div>
-                    <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
-                            <small class="f6 db tc">© 2020 Made by <b class="ttu">Wellington Lopes</b></small>
+                    <footer className="pv2 ph3 ph5-m ph6-l mid-gray">
+                            <small className="f6 db tc">© 2020 Made by <b className="ttu">Wellington Lopes</b></small>
                     </footer>
                 </Fragment>
             );
