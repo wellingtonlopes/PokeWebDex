@@ -4,7 +4,7 @@ import './_colors.scss'
 
 function Card({ name, type, sprite }) {
     return (
-        <div className="tc w5 bg-red dib br3 pa3 ma2 grow bw2 shadow-5">
+        <div className="tc w5 bg-red dib br3 pa3 ma2 dim bw2 shadow-5 pointer">
             <div className="flex flex-column items-center">
                 <img src={sprite} className='bg-light-yellow br-100 ba b--black-10' alt={`${name}`}/>             
                 <h2 className="bg-yellow br1 ma2 pa2">{name}</h2>
