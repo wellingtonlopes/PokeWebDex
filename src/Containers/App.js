@@ -48,7 +48,9 @@ class App extends Component {
           return (
               <Fragment>
                   <div className='tc'>
-                      <h1 className='f1'>PokeWebDex</h1>
+                      <div className="flex items-center justify-center">
+                        <h1 className='f1 pa3 w6 br2 ba b--dark-red bg-yellow'>PokeWebDex</h1>
+                      </div>
                       <SearchBox searchChange={this.onSearchChange}/>
                       <Scroll>
                           <ErrorBoundary>

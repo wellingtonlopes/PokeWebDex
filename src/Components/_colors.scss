@@ -1,0 +1,47 @@
+$colors: (
+    'ice': #98D8D8,
+    'normal': #A8A878,
+    'fire': #F08030,
+    'fighting': #C13928,
+    'water': #6890F0,
+    'flying': #A890F0,
+    'grass': #78C850,
+    'poison': #A250A1,
+    'electric': #F8D031,
+    'ground': #E0C068,
+    'psychic': #ED5887,
+    'rock': #B8A038,
+    'bug': #A8B820,
+    'dragon': #7A70F8,
+    'ghost': #705898,
+    'dark': #705848,
+    'steel': #B8B8D0,
+    'fairy': #EE99AC,
+    'default': #68A090
+);
+
+@each $name, $hex in $colors {
+    .#{$name} {
+      color: $hex;
+      &:visited {
+        color: $hex;
+      }
+    }
+    .bg-#{$name} {
+      background-color: $hex;
+    }
+    .b--#{$name} {
+      border-color: $hex;
+    }
+    .hover-bg-#{$name} {
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $hex;
+      }
+    }
+    .hover-#{$name}:hover,
+    .hover-#{$name}:visited:hover {
+      color: $hex
+    }
+  }
