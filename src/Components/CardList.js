@@ -3,7 +3,7 @@ import Card from './Card';
 
 function CardList({ pokemons }) {
     return (
-        <Fragment>
+        <div className="flex flex-wrap items-center justify-center">
             {
                 pokemons.map((monster, i) => {
                     return (
@@ -15,7 +15,7 @@ function CardList({ pokemons }) {
                     />);
                 })
             }
-        </Fragment>
+        </div>
     );
 }
 
